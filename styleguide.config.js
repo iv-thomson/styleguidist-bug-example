@@ -17,7 +17,11 @@ module.exports = {
 	usageMode: 'expand',
   exampleMode: 'expand',
   styleguideComponents: {
+	StyleGuideRenderer: path.join(__dirname, 'src/rsg-components/StyleGuideRenderer.jsx'),
     LinkRenderer: path.join(__dirname, 'src/rsg-components/LinkRenderer.jsx'),
     PropsRenderer: path.join(__dirname, 'src/rsg-components/PropsRenderer.js'),
   },
+  require: [
+    path.join(__dirname, 'src/css/index.css'),
+  ],
 }
